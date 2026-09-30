@@ -1,0 +1,46 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "Webhookvault SBOM",
+  "documentNamespace": "https://github.com/FelipeMadson/webhookvault/spdxdocs/webhookvault-1.0.0-13803c6e-a5d6-47d2-bfbc-da9ac40c1e9f",
+  "creationInfo": {
+    "created": "2026-09-30T15:18:14.487Z",
+    "creators": [
+      "Person: Felipe Madison (@FelipeMadson)",
+      "Organization: Autonomous Portfolio Engine — Staff Engineering Grade",
+      "Tool: SecurityCiGenerator-1.0.0"
+    ],
+    "licenseListVersion": "3.21"
+  },
+  "packages": [
+    {
+      "name": "webhookvault",
+      "SPDXID": "SPDXRef-Package-webhookvault",
+      "versionInfo": "1.0.0",
+      "packageFileName": "webhookvault-1.0.0.tar.gz",
+      "packageSupplier": "Person: Felipe Madison (https://github.com/FelipeMadson)",
+      "originator": "Person: Felipe Madison (https://github.com/FelipeMadson)",
+      "downloadLocation": "git+https://github.com/FelipeMadson/webhookvault.git@v1.0.0",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5ff34180c8de96bc6129d2fbd0818b40195a4b1ac349a16820ce9036b7c31359"
+        }
+      ],
+      "homepage": "https://github.com/FelipeMadson/webhookvault",
+      "concludedLicense": "MIT",
+      "declaredLicense": "MIT",
+      "copyrightText": "Copyright (c) 2026 Felipe Madison (@FelipeMadson)",
+      "description": "Enterprise-grade production release for Webhookvault, engineered by Felipe Madison."
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relatedSpdxElement": "SPDXRef-Package-webhookvault",
+      "relationshipType": "DESCRIBES"
+    }
+  ]
+}
