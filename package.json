@@ -1,0 +1,33 @@
+{
+  "name": "webhookvault",
+  "version": "1.0.0",
+  "description": "Local-first Webhook Inspector, Replayer & HMAC Verification Hub for Web Developers",
+  "main": "src/cli.ts",
+  "bin": {
+    "webhookvault": "./bin/webhookvault.js"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-strip-types src/cli.ts start",
+    "test": "node --experimental-strip-types --test tests/**/*.test.ts",
+    "lint": "node --experimental-strip-types --test"
+  },
+  "keywords": [
+    "webhook",
+    "inspector",
+    "replay",
+    "hmac",
+    "stripe",
+    "github",
+    "shopify",
+    "local-first",
+    "sqlite",
+    "testing",
+    "developer-tools"
+  ],
+  "author": "Felipe Madson <felipemadson@users.noreply.github.com> (https://github.com/FelipeMadson)",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
