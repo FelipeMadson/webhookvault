@@ -2,9 +2,9 @@
   "slug": "webhookvault",
   "version": "v1.0.0",
   "archiveFilename": "webhookvault-v1.0.0.tar.gz",
-  "archiveSizeBytes": 47101,
-  "sha256": "4393e9e25541e9bbadae056290447ac1fb0ec208288e54cffd69430d9cb287de",
+  "archiveSizeBytes": 47118,
+  "sha256": "e98e0f91086122061a34bbec00843f884bf2477a3f85b912c3025a0c0ef19dd0",
   "filesIncluded": 43,
-  "createdAt": "2026-09-30T15:54:46.720Z",
+  "createdAt": "2026-09-30T16:19:18.413Z",
   "author": "Felipe Madison (@FelipeMadson)"
 }
