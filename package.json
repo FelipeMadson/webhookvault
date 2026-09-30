@@ -1,6 +1,6 @@
 {
   "name": "webhookvault",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Local-first Webhook Inspector, Replayer & HMAC Verification Hub for Web Developers",
   "main": "src/cli.ts",
   "bin": {
