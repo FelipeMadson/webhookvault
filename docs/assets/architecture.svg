@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" width="100%" height="100%">
+  <defs>
+    <linearGradient id="canvasBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d14" />
+      <stop offset="100%" stop-color="#020509" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#141c28" />
+      <stop offset="100%" stop-color="#0d141f" />
+    </linearGradient>
+    <linearGradient id="accentCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <linearGradient id="accentPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+    <linearGradient id="accentEmerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+  </defs>
+
+  <style>
+    .bg { fill: url(#canvasBg); stroke: #1e293b; stroke-width: 1.5; rx: 14px; }
+    .header-bar { fill: #0d131f; stroke-bottom: #1e293b; }
+    .card { fill: url(#cardGrad); stroke: #26354a; stroke-width: 1.2; rx: 8px; }
+    .card-active { fill: url(#cardGrad); stroke: #06b6d4; stroke-width: 1.5; rx: 8px; }
+    .text-title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 13px; font-weight: 700; fill: #f8fafc; }
+    .text-subtitle { font-family: ui-monospace, SFMono-Regular, monospace; font-size: 11px; fill: #94a3b8; }
+    .text-label { font-family: ui-monospace, SFMono-Regular, monospace; font-size: 10px; fill: #64748b; font-weight: 600; }
+    .badge { font-family: ui-monospace, SFMono-Regular, monospace; font-size: 10px; font-weight: 700; fill: #38bdf8; }
+    .arrow { stroke: #38bdf8; stroke-width: 1.8; stroke-dasharray: 4, 3; fill: none; }
+    .arrow-solid { stroke: #06b6d4; stroke-width: 2; fill: none; }
+    .pulse-dot { fill: #06b6d4; }
+  </style>
+
+  <!-- Container Principal -->
+  <g filter="url(#shadow)">
+    <rect x="15" y="15" width="930" height="390" rx="14" class="bg" />
+    
+    <!-- Header -->
+    <path d="M 15 29 A 14 14 0 0 1 29 15 L 931 15 A 14 14 0 0 1 945 29 L 945 58 L 15 58 Z" class="header-bar" />
+    <circle cx="38" cy="36" r="5" fill="#ef4444" />
+    <circle cx="54" cy="36" r="5" fill="#f59e0b" />
+    <circle cx="70" cy="36" r="5" fill="#10b981" />
+    
+    <text x="96" y="40" class="text-title">Webhookvault</text>
+    <text x="440" y="40" class="badge">ARQUITETURA &amp; PIPELINE DE DADOS · [ZERO-TRUST SECURITY &amp; CRYPTOGRAPHIC VAULT]</text>
+    <text x="820" y="40" class="text-label">FELIPE MADISON</text>
+
+    <!-- Conteúdo Específico do Arquétipo -->
+    
+    <!-- 1. Inbound Webhook -->
+    <g transform="translate(45, 95)">
+      <rect width="180" height="260" class="card" />
+      <rect x="0" y="0" width="180" height="32" rx="8" fill="#1e293b" />
+      <text x="14" y="21" class="text-title">1. Inbound Ingestion</text>
+      <text x="14" y="65" class="text-subtitle">Entrada Não Confiável</text>
+      <text x="14" y="90" class="text-label">• JSON / Raw Payload</text>
+      <text x="14" y="110" class="text-label">• Timestamp Header</text>
+      <text x="14" y="130" class="text-label">• Provider Signature</text>
+      <rect x="14" y="165" width="152" height="70" rx="6" fill="#090d14" stroke="#ef4444" />
+      <text x="24" y="190" class="text-title" fill="#ef4444">Zero-Trust Input</text>
+      <text x="24" y="208" class="text-label">Rejeição Instantânea</text>
+      <text x="24" y="223" class="text-label">em falhas de schema</text>
+    </g>
+
+    <path d="M 225 225 L 275 225" class="arrow-solid" />
+    <polygon points="275,221 283,225 275,229" fill="#06b6d4" />
+
+    <!-- 2. Cryptographic Engine -->
+    <g transform="translate(285, 80)">
+      <rect width="220" height="290" class="card-active" />
+      <rect x="0" y="0" width="220" height="32" rx="8" fill="#0e7490" />
+      <text x="14" y="21" class="text-title">2. Timing-Safe HMAC</text>
+      <text x="14" y="60" class="text-subtitle">WebCrypto Subtle API</text>
+      
+      <rect x="14" y="75" width="192" height="50" rx="4" fill="#090d14" stroke="#06b6d4" />
+      <text x="24" y="95" class="text-title" fill="#06b6d4">HMAC-SHA256 Key</text>
+      <text x="24" y="113" class="text-label">node:crypto / SubtleCrypto</text>
+
+      <rect x="14" y="135" width="192" height="50" rx="4" fill="#090d14" stroke="#10b981" />
+      <text x="24" y="155" class="text-title" fill="#10b981">crypto.timingSafeEqual</text>
+      <text x="24" y="173" class="text-label">Proteção Canal Lateral (0ms)</text>
+
+      <rect x="14" y="195" width="192" height="50" rx="4" fill="#090d14" stroke="#a855f7" />
+      <text x="24" y="215" class="text-title" fill="#a855f7">Recursive Masker</text>
+      <text x="24" y="233" class="text-label">***REDACTED*** Tokens</text>
+    </g>
+
+    <path d="M 505 225 L 555 225" class="arrow-solid" />
+    <polygon points="555,221 563,225 555,229" fill="#06b6d4" />
+
+    <!-- 3. SQLite WAL Log -->
+    <g transform="translate(565, 95)">
+      <rect width="180" height="260" class="card" />
+      <rect x="0" y="0" width="180" height="32" rx="8" fill="#1e293b" />
+      <text x="14" y="21" class="text-title">3. SQLite WAL Engine</text>
+      <text x="14" y="65" class="text-subtitle">Persistência Atômica</text>
+      <text x="14" y="90" class="text-label">• Write-Ahead Log</text>
+      <text x="14" y="110" class="text-label">• node:sqlite Nativo</text>
+      <text x="14" y="130" class="text-label">• &lt; 0.4ms fsync latency</text>
+
+      <rect x="14" y="165" width="152" height="70" rx="6" fill="#090d14" stroke="#10b981" />
+      <text x="24" y="190" class="text-title" fill="#10b981">Local-First ACID</text>
+      <text x="24" y="208" class="text-label">Tolerância a quedas</text>
+      <text x="24" y="223" class="text-label">e zero corrupção</text>
+    </g>
+
+    <path d="M 745 225 L 785 225" class="arrow-solid" />
+    <polygon points="785,221 793,225 785,229" fill="#06b6d4" />
+
+    <!-- 4. Merkle Audit Chain -->
+    <g transform="translate(795, 95)">
+      <rect width="120" height="260" class="card" />
+      <rect x="0" y="0" width="120" height="32" rx="8" fill="#1e293b" />
+      <text x="12" y="21" class="text-title">4. Merkle Tree</text>
+      <text x="12" y="65" class="text-subtitle">Audit Chain</text>
+      <text x="12" y="95" class="badge">Block #0042</text>
+      <text x="12" y="115" class="text-label">Hash Anterior</text>
+      <text x="12" y="130" class="text-label" fill="#64748b">a8f2...e491</text>
+      <text x="12" y="155" class="text-label">Hash do Bloco</text>
+      <text x="12" y="170" class="text-label" fill="#10b981">3b71...09bc</text>
+      <text x="12" y="205" class="badge">Imutável</text>
+      <text x="12" y="225" class="text-label">Auditoria Staff</text>
+    </g>
+  </g>
+</svg>
