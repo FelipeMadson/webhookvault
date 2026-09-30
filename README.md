@@ -1,5 +1,15 @@
 # ⚡ WebhookVault
 
+[![CI Status](https://github.com/FelipeMadson/webhookvault/actions/workflows/ci.yml/badge.svg)](https://github.com/FelipeMadson/webhookvault/actions)
+[![Latest Release](https://img.shields.io/github/v/release/FelipeMadson/webhookvault?color=145e4d&logo=github)](https://github.com/FelipeMadson/webhookvault/releases)
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
+[![SemVer 2.0.0](https://img.shields.io/badge/semver-2.0.0-blue.svg)](https://semver.org)
+
+[![CI Status](https://github.com/FelipeMadson/webhookvault/actions/workflows/ci.yml/badge.svg)](https://github.com/FelipeMadson/webhookvault/actions)
+[![Latest Release](https://img.shields.io/github/v/release/FelipeMadson/webhookvault?color=145e4d&logo=github)](https://github.com/FelipeMadson/webhookvault/releases)
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
+[![SemVer 2.0.0](https://img.shields.io/badge/semver-2.0.0-blue.svg)](https://semver.org)
+
 > **Local-First Webhook Inspector, Deterministic Replayer & HMAC Verification Hub.**  
 > Zero external runtime dependencies. Zero cloud leaks. 100% privacy and speed.
 
@@ -200,3 +210,24 @@ GitHub: [@FelipeMadson](https://github.com/FelipeMadson)
 ## 📄 License
 
 Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for details.
+
+---
+
+## 🖥️ Demonstração em Terminal Vetorial (Execução & Benchmarks)
+
+<p align="center">
+  <img src="docs/assets/terminal-demo.svg" alt="Terminal Demo - Webhookvault" width="840" />
+</p>
+
+---
+
+## 📦 Polyglot Client SDKs (TypeScript & Python)
+
+SDKs tipados com zero dependências externas em `sdk/`:
+
+```typescript
+import { webhookvaultClient } from "./sdk/ts/client.ts";
+const client = new webhookvaultClient({ baseUrl: "http://127.0.0.1:3000" });
+const health = await client.checkHealth();
+console.log("Health:", health.status);
+```
