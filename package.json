@@ -11,7 +11,9 @@
   "scripts": {
     "start": "node --experimental-strip-types src/cli.ts start",
     "test": "node --experimental-strip-types --test tests/**/*.test.ts",
-    "lint": "node --experimental-strip-types --test"
+    "lint": "node --experimental-strip-types --test",
+    "build": "tsc --noEmit",
+    "typecheck": "tsc --noEmit"
   },
   "keywords": [
     "webhook",
@@ -30,5 +32,9 @@
   "license": "MIT",
   "engines": {
     "node": ">=22.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.2",
+    "typescript": "5.7.2"
   }
 }

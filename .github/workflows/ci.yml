@@ -25,7 +25,13 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Verify Dependencies & Audit
+      - name: Install locked development dependencies
+        run: npm ci --ignore-scripts
+
+      - name: Typecheck the committed source
+        run: npm run build
+
+      - name: Audit dependencies
         run: npm audit
 
       - name: Run Test Suite (node:test native runner)
