@@ -207,7 +207,7 @@ node ../envdoctor/bin/envdoctor.js check
 
 ## 👤 Author
 
-**Felipe Madson**  
+**Felipe Madison**  
 *Estudante de Tecnologia em Sistemas para Internet (TSI)*  
 GitHub: [@FelipeMadson](https://github.com/FelipeMadson)
 
