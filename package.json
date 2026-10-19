@@ -28,7 +28,7 @@
     "testing",
     "developer-tools"
   ],
-  "author": "Felipe Madson <felipemadson@users.noreply.github.com> (https://github.com/FelipeMadson)",
+  "author": "Felipe Madison <felipemadson@users.noreply.github.com> (https://github.com/FelipeMadson)",
   "license": "MIT",
   "engines": {
     "node": ">=22.0.0"
